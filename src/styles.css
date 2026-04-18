@@ -1,57 +1,84 @@
 :root {
+  --bg: #f2f6ff;
+  --surface: #fdfdff;
+  --line: #d3deff;
+  --text: #1f2845;
+  --muted: #526193;
+  --brand: #2252d6;
+  --brand-strong: #163b9f;
   font-family: "Space Grotesk", "Segoe UI", sans-serif;
 }
 
 body {
   margin: 0;
-}
-
-.card {
-  border-radius: 16px;
-  border: 1px solid #ddd8ef;
+  color: var(--text);
   background:
-    radial-gradient(circle at top left, #ffffff, transparent 45%),
-    linear-gradient(120deg, #f4f2ff, #eef5ff);
+    radial-gradient(circle at 2% 0, #dce8ff 0, transparent 36%),
+    radial-gradient(circle at 98% 100%, #d8f0ff 0, transparent 34%), var(--bg);
+}
+
+.acesso-page {
+  display: grid;
+  gap: 14px;
+}
+
+.acesso-page .project-pill {
+  margin: 0;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border: 1px solid #9eb2e9;
+  color: var(--brand-strong);
+  background: #edf3ff;
+  border-radius: 999px;
+  padding: 8px 12px;
+  width: fit-content;
+  font-weight: 700;
+}
+
+.acesso-page .card {
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  background: var(--surface);
   padding: 24px;
-  color: #26273b;
 }
 
-h2 {
-  margin: 0 0 10px;
-  font-size: 1.5rem;
+.acesso-page h2 {
+  margin: 0;
+  font-size: 1.6rem;
 }
 
-.sub {
-  margin: 0 0 16px;
-  color: #51537a;
+.acesso-page .sub {
+  margin: 8px 0 16px;
+  color: var(--muted);
 }
 
-.table-wrapper {
+.acesso-page .table-wrapper {
   overflow-x: auto;
 }
 
-table {
+.acesso-page table {
   width: 100%;
   border-collapse: collapse;
 }
 
-th,
-td {
+.acesso-page th,
+.acesso-page td {
   text-align: left;
-  padding: 10px;
-  border-bottom: 1px solid #ddd8ef;
+  padding: 11px 10px;
+  border-bottom: 1px solid var(--line);
 }
 
-.badge {
+.acesso-page .badge {
   border-radius: 999px;
-  background: #1447e6;
-  color: #f8fbff;
-  padding: 4px 10px;
+  background: linear-gradient(120deg, #2b64ff, #2048b8);
+  color: #f7faff;
+  padding: 5px 12px;
   font-size: 0.8rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
-.meta {
+.acesso-page .meta {
   margin-top: 14px;
-  color: #51537a;
+  color: var(--muted);
 }
