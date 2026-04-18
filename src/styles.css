@@ -1,0 +1,57 @@
+:root {
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.card {
+  border-radius: 16px;
+  border: 1px solid #ddd8ef;
+  background:
+    radial-gradient(circle at top left, #ffffff, transparent 45%),
+    linear-gradient(120deg, #f4f2ff, #eef5ff);
+  padding: 24px;
+  color: #26273b;
+}
+
+h2 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+}
+
+.sub {
+  margin: 0 0 16px;
+  color: #51537a;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #ddd8ef;
+}
+
+.badge {
+  border-radius: 999px;
+  background: #1447e6;
+  color: #f8fbff;
+  padding: 4px 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.meta {
+  margin-top: 14px;
+  color: #51537a;
+}
